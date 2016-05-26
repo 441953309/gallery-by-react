@@ -12,8 +12,8 @@ class ImageFigure extends React.Component {
     } else {
       this.props.center();
     }
-    e.stopPropagation();
     e.preventDefault();
+    e.stopPropagation();
   }
 
   render() {

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ImageFigure from './ImageFigure';
+import ControllerUnit from './ControllerUnit';
 
 require('normalize.css/normalize.css');
 require('styles/main.scss');
@@ -194,6 +195,11 @@ class AppComponent extends React.Component {
                                    arrange={this.state.imgArrangeArr[index]}
                                    inverse={this.inverse(index)}
                                    center={this.center(index)}/>);
+
+      controllerUnits.push(<ControllerUnit key={index}
+                                           arrange={this.state.imgArrangeArr[index]}
+                                           inverse={this.inverse(index)}
+                                           center={this.center(index)}/>)
     })
 
     return (
